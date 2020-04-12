@@ -4,16 +4,46 @@ import { getApis } from '../../services/apiService';
 import Card from '../Card/Card';
 import Loader from '../../images/loader.gif';
 
+// To emulate pagination from backend
+let page = 1;
+
 const Documentation = () => {
   const [apis, setApis] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleScroll = () => {
+    const windowHeight = window.innerHeight || document.documentElement.offsetHeight;
+    const body = document.body;
+    const html = document.documentElement;
+    const documentHeight = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+
+    if (windowHeight + window.pageYOffset >= documentHeight) {
+      setLoading(true);
+      (async () => {
+        // Increment the page number and make AJAX call to fetch new page
+        page = page + 1;
+        const res = await getApis(page);
+        setApis((current) => {
+          if (current) return [...current, ...res];
+        });
+        setLoading(false);
+      })();
+    }
+  };
 
   useEffect(() => {
     (async () => {
-      console.log('hi');
       const res = await getApis();
-      console.log('apiservice', res);
       setApis(res);
     })();
+
+    window.addEventListener('scroll', handleScroll, false);
   }, []);
 
   return (
@@ -24,8 +54,8 @@ const Documentation = () => {
       </div>
       <div className="cards-section">
         {apis ? (
-          apis.map((api) => (
-            <div className="card-wrapper">
+          apis.map((api, i) => (
+            <div className="card-wrapper" key={i}>
               <Card content={api} />
             </div>
           ))
@@ -35,6 +65,11 @@ const Documentation = () => {
           </div>
         )}
       </div>
+      {loading && (
+        <div className="loader-wrapper">
+          <img src={Loader} alt="loader" />
+        </div>
+      )}
     </div>
   );
 };
