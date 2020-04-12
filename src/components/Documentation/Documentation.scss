@@ -1,0 +1,53 @@
+@import '../../scss/';
+
+.documentation-container {
+  padding: 40px 15px;
+  margin: auto;
+  max-width: $max-width;
+
+  @media screen and (max-width: 500px) {
+    padding: 25px 15px;
+  }
+
+  .page-description {
+    @media screen and (min-width: 501px) {
+      padding-left: 16px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    .card-wrapper {
+      flex-basis: 33.33%;
+
+      @media screen and (min-width: 501px) {
+        padding: 16px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        flex-basis: 50%;
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-basis: 100%;
+        padding: 8px 0px;
+      }
+    }
+  }
+}
