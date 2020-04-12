@@ -54,6 +54,12 @@ body {
   background-color: $color-theme-grey;
 }
 
+h1 {
+  margin: 30px auto;
+  font-size: 1.6rem;
+  max-width: $max-width;
+}
+
 .main-container {
   header {
     padding: 40px 20px;

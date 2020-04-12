@@ -14,3 +14,9 @@ Use npm to install & run the app.
 npm install
 npm start
 ```
+
+## Step to build
+
+```bash
+npm run build
+```

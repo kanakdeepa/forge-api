@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Reference = () => {
-  return <div>Reference</div>;
+  return (
+    <div>
+      <h1>Reference Page</h1>
+    </div>
+  );
 };
 export default Reference;
