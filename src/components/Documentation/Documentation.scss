@@ -33,6 +33,7 @@
   .cards-section {
     display: flex;
     flex-wrap: wrap;
+
     .card-wrapper {
       flex-basis: 33.33%;
 
@@ -49,5 +50,19 @@
         padding: 8px 0px;
       }
     }
+
+    .loader-wrapper {
+      padding-top: 10px;
+      flex: 1;
+      text-align: center;
+    }
   }
+}
+
+.documentation-bg {
+  background-image: url(../../images/body-bg.png);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: 0 100%;
+  background-color: $color-blue-light;
 }
