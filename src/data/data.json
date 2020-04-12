@@ -1,0 +1,91 @@
+[
+  {
+    "desc": "Generate tokens based on the OAuth 2.0 standard to authenticate requests made to Forge APIs and SDKs.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-oauth.svg",
+    "name": "Authentication",
+    "links": {
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Integrate with the Autodesk BIM 360 platform to extend its capabilities to reach segments of the construction ecosystem that don’t have direct access to BIM data.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-bim360.svg",
+    "name": "BIM 360",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Access data across BIM 360 team, Fusion Team, BIM 360 Docs, and the Object Storage Service to build apps to display and extend your data in ways that add value to your users.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-data-management.svg",
+    "name": "Data Management",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Automate repetitive tasks by leveraging on the scale of the Forge Platform and running scripts on your design files in the cloud.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-design-automation.svg",
+    "name": "Design Automation",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Derive outputs viewable by the Forge Viewer from more than 60 CAD file formats, and extract metadata about the models as well as the individual objects within the model.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-model-derivative.svg",
+    "name": "Model Derivative",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Convert digital images into high resolution textured meshes, dense point clouds and orthophotos.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-reality-cap.svg",
+    "name": "Reality Capture",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Access Autodesk Token Flex Usage Data platform to generate reports on consumption, usage, and contract details.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/tokenflex.svg",
+    "name": "Token Flex",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Render 3D and 2D model data within a browser. The models can come from a wide range of applications such as AutoCAD, Fusion 360, Revit, and many more.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-viewer.svg",
+    "name": "Viewer",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  },
+  {
+    "desc": "Subscribe to and receive notifications of the occurrence of events within the Forge eco system.",
+    "icon": "https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200406043645/images/api-icons/icon-webhook.svg",
+    "name": "Webhooks",
+    "links": {
+      "intro": "https://forge.autodesk.com/api/bim-360-cover-page/",
+      "dev_guide": "https://forge.autodesk.com/en/docs/bim360/v1/overview/",
+      "api_reference": "https://forge.autodesk.com/en/docs/bim360/v1/reference/http/"
+    }
+  }
+]
