@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "surge build --domain forge-api-deepa.surge.sh"
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build --domain forge-api-deepa.surge.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
